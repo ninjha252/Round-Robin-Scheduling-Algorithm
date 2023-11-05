@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Round Robin Scheduling</title>
+    <style>
+        /* Add any additional styling you need here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 15px;
+        }
+        footer {
+            font-size: 0.8em;
+        }
+        .authors {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,7 +48,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" class="active">About</a></li>
                 <li><a href="results.html">Results</a></li>
             </ul>
         </nav>
@@ -19,8 +56,18 @@
     <main>
         <section>
             <h2>Round Robin Scheduling Algorithm</h2>
-            <p>The Round Robin Scheduling algorithm is a preemptive scheduling algorithm...</p>
-            <!-- You can add more content about the Round Robin algorithm here -->
+            <p>The Round Robin Scheduling algorithm is a preemptive scheduling algorithm that is widely used for time-sharing systems. This algorithm assigns a fixed time unit per process and cycles through them. Every process is assigned a time slot or quantum and is interrupted if it is not completed before the quantum expires, after which it is added to the end of the queue.</p>
+            <p>It is designed to ensure that all processes are allocated a fair amount of CPU time in a cyclic order. This prevents the monopolization of the CPU by a single process and provides a predictable time frame for each process execution.</p>
+            <!-- Additional content about the Round Robin algorithm can go here -->
+        </section>
+        
+        <!-- Authors Section -->
+        <section class="authors">
+            <h2>Authors</h2>
+            <ul>
+                <li>Nitin Jha, PhD Student, Department of Computer Science</li>
+                <li>Dr. Dan Lo, Department of Computer Science</li>
+            </ul>
         </section>
     </main>
     <footer>
